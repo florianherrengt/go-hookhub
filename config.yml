@@ -1,0 +1,6 @@
+appname: test
+
+pubsub:
+  eventname:
+    newincomingrequest: new-incomming-request 
+    
