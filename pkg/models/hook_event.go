@@ -8,8 +8,9 @@ import (
 // HookEvent from external service
 type HookEvent struct {
 	gorm.Model
-	ID      uuid.UUID `gorm:"type:uuid;primary_key;"`
-	Payload string
+	ID          uuid.UUID `gorm:"type:uuid;primary_key;"`
+	ContentType string
+	Body        string
 }
 
 // BeforeCreate adds the uuid

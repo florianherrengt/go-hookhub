@@ -3,3 +3,4 @@ gin-bin
 test.db
 .gitignore
 results.bin
+vendor

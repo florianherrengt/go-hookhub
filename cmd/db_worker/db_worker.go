@@ -18,6 +18,8 @@ func main() {
 	}
 	datasource.ConnectStreamClient("db-worker")
 	defer datasource.StreamClient.Close()
+	datasource.ConnectDataBase()
+
 	qsub := worker.NewDBWorker()
 	defer qsub.Close()
 
